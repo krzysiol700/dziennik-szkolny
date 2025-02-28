@@ -4,58 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieobecności i Spóźnienia</title>
-    <style>
 	
-	<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 20px;
+    }
+    .absence {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        overflow-x: auto; /* Pasek przewijania jeśli tabela jest za szeroka */
+        max-width: 100%;
+    }
     table {
-      width: 100%;
-      border-collapse: collapse;
+        width: 100%;
+        min-width: 600px; /* Możesz zwiększyć, jeśli tabela nadal się nie mieści */
+        border-collapse: collapse;
     }
-    td, th {
-      padding: 8px;
-      text-align: left;
-      border: 1px solid #ddd;
+    th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
     }
-    @media (max-width: 600px) {
-      table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
+    th {
+        background: #2a71d0;
+        color: white;
     }
-  </style>
-</head>
+</style>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-        }
-        .absence {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            display: inline-block;
-            text-align: left;
-            width: 80%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        th {
-            background: #2a71d0;
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <h2>Nieobecności i Spóźnienia</h2>
